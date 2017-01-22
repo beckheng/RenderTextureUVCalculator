@@ -27,14 +27,11 @@ namespace RenderTextureUVCalculator
 
 			float imgW = float.Parse(rawImageWidthTextBox.Text);
 			float imgH = float.Parse(rawImageHeightTextBox.Text);
-
-			int modelNum = int.Parse(modelNumTextBox.Text);
-			float avgW = 1f / modelNum;
-
+			
 			float uvW = imgW / rtW;
 			float uvH = imgH / rtH;
 
-			float uvX = avgW + (avgW - uvW) * .5f;
+			float uvX = (1f - uvW) * .5f;
 			float uvY = (1f - uvH) * .5f;
 
 			uvWidthTextBox.Text = uvW.ToString("f6");

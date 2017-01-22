@@ -36,22 +36,19 @@
 			this.rawImageHeightTextBox = new System.Windows.Forms.TextBox();
 			this.renderTextureWidthTextBox = new System.Windows.Forms.TextBox();
 			this.renderTextureHeightTextBox = new System.Windows.Forms.TextBox();
-			this.label5 = new System.Windows.Forms.Label();
-			this.modelNumTextBox = new System.Windows.Forms.TextBox();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.groupBox2 = new System.Windows.Forms.GroupBox();
-			this.groupBox3 = new System.Windows.Forms.GroupBox();
-			this.label6 = new System.Windows.Forms.Label();
-			this.label7 = new System.Windows.Forms.Label();
-			this.label8 = new System.Windows.Forms.Label();
-			this.label9 = new System.Windows.Forms.Label();
-			this.label10 = new System.Windows.Forms.Label();
-			this.label11 = new System.Windows.Forms.Label();
-			this.uvWidthTextBox = new System.Windows.Forms.TextBox();
-			this.uvHeightTextBox = new System.Windows.Forms.TextBox();
-			this.uvXTextBox = new System.Windows.Forms.TextBox();
 			this.uvYTextBox = new System.Windows.Forms.TextBox();
+			this.uvXTextBox = new System.Windows.Forms.TextBox();
+			this.uvHeightTextBox = new System.Windows.Forms.TextBox();
+			this.uvWidthTextBox = new System.Windows.Forms.TextBox();
+			this.label11 = new System.Windows.Forms.Label();
+			this.label10 = new System.Windows.Forms.Label();
+			this.label9 = new System.Windows.Forms.Label();
+			this.label8 = new System.Windows.Forms.Label();
+			this.label7 = new System.Windows.Forms.Label();
+			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.calcButton = new System.Windows.Forms.Button();
+			this.groupBox3 = new System.Windows.Forms.GroupBox();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.SuspendLayout();
@@ -124,24 +121,6 @@
 			this.renderTextureHeightTextBox.TabIndex = 7;
 			this.renderTextureHeightTextBox.Text = "640";
 			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(103, 83);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(53, 12);
-			this.label5.TabIndex = 8;
-			this.label5.Text = "模型数量";
-			// 
-			// modelNumTextBox
-			// 
-			this.modelNumTextBox.Location = new System.Drawing.Point(162, 79);
-			this.modelNumTextBox.Name = "modelNumTextBox";
-			this.modelNumTextBox.ReadOnly = true;
-			this.modelNumTextBox.Size = new System.Drawing.Size(100, 21);
-			this.modelNumTextBox.TabIndex = 9;
-			this.modelNumTextBox.Text = "3";
-			// 
 			// groupBox1
 			// 
 			this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -162,14 +141,84 @@
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "计算结果";
 			// 
+			// uvYTextBox
+			// 
+			this.uvYTextBox.Location = new System.Drawing.Point(305, 85);
+			this.uvYTextBox.Name = "uvYTextBox";
+			this.uvYTextBox.Size = new System.Drawing.Size(100, 21);
+			this.uvYTextBox.TabIndex = 17;
+			// 
+			// uvXTextBox
+			// 
+			this.uvXTextBox.Location = new System.Drawing.Point(166, 85);
+			this.uvXTextBox.Name = "uvXTextBox";
+			this.uvXTextBox.Size = new System.Drawing.Size(100, 21);
+			this.uvXTextBox.TabIndex = 16;
+			// 
+			// uvHeightTextBox
+			// 
+			this.uvHeightTextBox.Location = new System.Drawing.Point(305, 58);
+			this.uvHeightTextBox.Name = "uvHeightTextBox";
+			this.uvHeightTextBox.Size = new System.Drawing.Size(100, 21);
+			this.uvHeightTextBox.TabIndex = 15;
+			// 
+			// uvWidthTextBox
+			// 
+			this.uvWidthTextBox.Location = new System.Drawing.Point(166, 58);
+			this.uvWidthTextBox.Name = "uvWidthTextBox";
+			this.uvWidthTextBox.Size = new System.Drawing.Size(100, 21);
+			this.uvWidthTextBox.TabIndex = 14;
+			// 
+			// label11
+			// 
+			this.label11.AutoSize = true;
+			this.label11.Location = new System.Drawing.Point(288, 89);
+			this.label11.Name = "label11";
+			this.label11.Size = new System.Drawing.Size(11, 12);
+			this.label11.TabIndex = 13;
+			this.label11.Text = "Y";
+			// 
+			// label10
+			// 
+			this.label10.AutoSize = true;
+			this.label10.Location = new System.Drawing.Point(149, 89);
+			this.label10.Name = "label10";
+			this.label10.Size = new System.Drawing.Size(11, 12);
+			this.label10.TabIndex = 12;
+			this.label10.Text = "X";
+			// 
+			// label9
+			// 
+			this.label9.AutoSize = true;
+			this.label9.Location = new System.Drawing.Point(288, 62);
+			this.label9.Name = "label9";
+			this.label9.Size = new System.Drawing.Size(11, 12);
+			this.label9.TabIndex = 11;
+			this.label9.Text = "H";
+			// 
+			// label8
+			// 
+			this.label8.AutoSize = true;
+			this.label8.Location = new System.Drawing.Point(149, 62);
+			this.label8.Name = "label8";
+			this.label8.Size = new System.Drawing.Size(11, 12);
+			this.label8.TabIndex = 10;
+			this.label8.Text = "W";
+			// 
+			// label7
+			// 
+			this.label7.AutoSize = true;
+			this.label7.Location = new System.Drawing.Point(109, 30);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(47, 12);
+			this.label7.TabIndex = 9;
+			this.label7.Text = "UV Rect";
+			// 
 			// groupBox2
 			// 
 			this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.groupBox2.Controls.Add(this.calcButton);
-			this.groupBox2.Controls.Add(this.label6);
-			this.groupBox2.Controls.Add(this.modelNumTextBox);
-			this.groupBox2.Controls.Add(this.label5);
 			this.groupBox2.Controls.Add(this.renderTextureHeightTextBox);
 			this.groupBox2.Controls.Add(this.label2);
 			this.groupBox2.Controls.Add(this.renderTextureWidthTextBox);
@@ -185,6 +234,18 @@
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "参数设置";
 			// 
+			// calcButton
+			// 
+			this.calcButton.BackColor = System.Drawing.SystemColors.Control;
+			this.calcButton.ForeColor = System.Drawing.SystemColors.Highlight;
+			this.calcButton.Location = new System.Drawing.Point(33, 78);
+			this.calcButton.Name = "calcButton";
+			this.calcButton.Size = new System.Drawing.Size(496, 23);
+			this.calcButton.TabIndex = 11;
+			this.calcButton.Text = "计算";
+			this.calcButton.UseVisualStyleBackColor = false;
+			this.calcButton.Click += new System.EventHandler(this.calcButton_Click);
+			// 
 			// groupBox3
 			// 
 			this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -197,101 +258,7 @@
 			this.groupBox3.TabStop = false;
 			this.groupBox3.Text = "计算说明";
 			// 
-			// label6
-			// 
-			this.label6.AutoSize = true;
-			this.label6.Location = new System.Drawing.Point(268, 83);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(137, 12);
-			this.label6.TabIndex = 10;
-			this.label6.Text = "(计算单个模型所占宽度)";
-			// 
-			// label7
-			// 
-			this.label7.AutoSize = true;
-			this.label7.Location = new System.Drawing.Point(109, 30);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(47, 12);
-			this.label7.TabIndex = 9;
-			this.label7.Text = "UV Rect";
-			// 
-			// label8
-			// 
-			this.label8.AutoSize = true;
-			this.label8.Location = new System.Drawing.Point(149, 62);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(11, 12);
-			this.label8.TabIndex = 10;
-			this.label8.Text = "W";
-			// 
-			// label9
-			// 
-			this.label9.AutoSize = true;
-			this.label9.Location = new System.Drawing.Point(288, 62);
-			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(11, 12);
-			this.label9.TabIndex = 11;
-			this.label9.Text = "H";
-			// 
-			// label10
-			// 
-			this.label10.AutoSize = true;
-			this.label10.Location = new System.Drawing.Point(149, 89);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(11, 12);
-			this.label10.TabIndex = 12;
-			this.label10.Text = "X";
-			// 
-			// label11
-			// 
-			this.label11.AutoSize = true;
-			this.label11.Location = new System.Drawing.Point(288, 89);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(11, 12);
-			this.label11.TabIndex = 13;
-			this.label11.Text = "Y";
-			// 
-			// uvWidthTextBox
-			// 
-			this.uvWidthTextBox.Location = new System.Drawing.Point(166, 58);
-			this.uvWidthTextBox.Name = "uvWidthTextBox";
-			this.uvWidthTextBox.Size = new System.Drawing.Size(100, 21);
-			this.uvWidthTextBox.TabIndex = 14;
-			// 
-			// uvHeightTextBox
-			// 
-			this.uvHeightTextBox.Location = new System.Drawing.Point(305, 58);
-			this.uvHeightTextBox.Name = "uvHeightTextBox";
-			this.uvHeightTextBox.Size = new System.Drawing.Size(100, 21);
-			this.uvHeightTextBox.TabIndex = 15;
-			// 
-			// uvXTextBox
-			// 
-			this.uvXTextBox.Location = new System.Drawing.Point(166, 85);
-			this.uvXTextBox.Name = "uvXTextBox";
-			this.uvXTextBox.Size = new System.Drawing.Size(100, 21);
-			this.uvXTextBox.TabIndex = 16;
-			// 
-			// uvYTextBox
-			// 
-			this.uvYTextBox.Location = new System.Drawing.Point(305, 85);
-			this.uvYTextBox.Name = "uvYTextBox";
-			this.uvYTextBox.Size = new System.Drawing.Size(100, 21);
-			this.uvYTextBox.TabIndex = 17;
-			// 
-			// calcButton
-			// 
-			this.calcButton.BackColor = System.Drawing.SystemColors.Control;
-			this.calcButton.ForeColor = System.Drawing.SystemColors.Highlight;
-			this.calcButton.Location = new System.Drawing.Point(429, 78);
-			this.calcButton.Name = "calcButton";
-			this.calcButton.Size = new System.Drawing.Size(75, 23);
-			this.calcButton.TabIndex = 11;
-			this.calcButton.Text = "计算";
-			this.calcButton.UseVisualStyleBackColor = false;
-			this.calcButton.Click += new System.EventHandler(this.calcButton_Click);
-			// 
-			// Form1
+			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -300,7 +267,7 @@
 			this.Controls.Add(this.groupBox2);
 			this.Controls.Add(this.groupBox1);
 			this.MaximizeBox = false;
-			this.Name = "Form1";
+			this.Name = "MainForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "计算3D模型在RenderTexture中的UV Rect的WHXY";
 			this.Load += new System.EventHandler(this.Form1_Load);
@@ -322,12 +289,9 @@
 		private System.Windows.Forms.TextBox rawImageHeightTextBox;
 		private System.Windows.Forms.TextBox renderTextureWidthTextBox;
 		private System.Windows.Forms.TextBox renderTextureHeightTextBox;
-		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.TextBox modelNumTextBox;
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.GroupBox groupBox2;
 		private System.Windows.Forms.GroupBox groupBox3;
-		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.Label label11;
 		private System.Windows.Forms.Label label10;
